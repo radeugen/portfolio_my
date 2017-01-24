@@ -18,6 +18,11 @@ html, body {
     min-height: 50px; }
 
 /* line 32, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+.container {
+  width: 940px;
+  margin: 0 auto; }
+
+/* line 37, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
 .footer {
   min-height: 50px;
   margin-top: -50px; }
