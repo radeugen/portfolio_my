@@ -1,0 +1,44 @@
+/*VARS*/
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 960px; }
+  .wrapper::after {
+    content: "";
+    display: block;
+    min-height: 50px; }
+
+.footer {
+  min-height: 50px;
+  margin-top: -50px; }
+
+body {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: normal; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  color: #727272; }
+
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 60px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+
+.footer {
+  width: 100%;
+  background-color: #414141; }
+
+/*# sourceMappingURL=style.css.map */

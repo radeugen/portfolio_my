@@ -1,0 +1,23 @@
+@import "_misc/adjustment.scss"; 
+
+body {
+    margin: 0;
+    padding: 0;
+    @extend %font-main;
+    background-color: $bg-color;
+    color: $text-light;
+}
+
+.header {
+    width: 100%;
+    background-color: $white-color;
+    min-height: 60px;
+    @include box-shadow(0, 1px, 3px,rgba(0, 0, 0, 0.2));
+    
+}
+
+.footer {
+    width: 100%;
+    background-color: $text-dark;
+}
+

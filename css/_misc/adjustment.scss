@@ -1,0 +1,77 @@
+/*VARS*/
+
+$container-width:940px;
+$footer-height:50px;
+
+$bg-color:#f6f6f6;
+$text-dark:#414141;
+$text-light:#727272;
+$blue-color:#33c1e3;
+$red-color:#e85f61;
+$white-color:#ffffff;
+
+html,body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: $container-width +20px;
+    
+    &::after {
+        content: "";
+        display: block;
+        min-height: $footer-height;
+    }
+    
+}
+
+.footer {
+    min-height: $footer-height;
+    margin-top: -$footer-height;
+}
+
+%font-main {
+    font-size: 18px;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    line-height: 1.44;
+    font-weight: normal;
+}
+
+%font-h1 {
+    font-size: 35px;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    line-height: 1.28;
+    font-weight: bold;
+}
+
+%font-active {
+    font-size: 18px;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    line-height: 1.44;
+    font-weight: bold;
+}
+
+%clearfix {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+

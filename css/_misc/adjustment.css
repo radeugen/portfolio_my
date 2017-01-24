@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*VARS*/
+/* line 13, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+/* line 18, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 960px; }
+  /* line 24, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+  .wrapper::after {
+    content: "";
+    display: block;
+    min-height: 50px; }
+
+/* line 32, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+.footer {
+  min-height: 50px;
+  margin-top: -50px; }
+
+/*# sourceMappingURL=adjustment.css.map */
