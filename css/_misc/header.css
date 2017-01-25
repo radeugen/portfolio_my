@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*VARS*/
+/* line 28, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+.contacts-link {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: bold; }
+
+/* line 36, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+.header::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* line 3, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.header {
+  width: 100%;
+  min-height: 60px;
+  padding: 10px 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+
+/* line 13, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.header__left {
+  float: left; }
+
+/* line 17, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.header__right {
+  float: right; }
+
+/* line 21, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.avatar-img {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  margin-right: 15px; }
+
+/* line 28, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.contacts {
+  margin-top: 20px;
+  position: relative; }
+
+/* line 33, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.contacts-link {
+  display: inline-block;
+  color: #33c1e3;
+  text-decoration: none;
+  background: url("/img/bg/contacts_bg.png") repeat-x 0 bottom; }
+
+/* line 41, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.contacts-dropdown {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: -30px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  white-space: nowrap;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+/* line 54, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+.contacts-dropdown__item {
+  list-style: none;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(90, 90, 90, 0.1); }
+  /* line 59, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/header.scss */
+  .contacts-dropdown__item:last-child {
+    border-bottom: none; }
+
+/*# sourceMappingURL=header.css.map */

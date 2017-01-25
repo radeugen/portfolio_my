@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*VARS*/
+/* line 36, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+.footer .container::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* line 43, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
+.social {
+  padding: 0;
+  margin: 0; }
+
+/* line 3, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: #414141;
+  min-height: 50px;
+  margin-top: -50px; }
+
+/* line 18, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.footer__left {
+  float: left;
+  width: 500px; }
+
+/* line 23, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.copyright {
+  padding: 15px 0;
+  font-size: 14px; }
+
+/* line 28, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.footer__right {
+  float: right;
+  width: 150px; }
+
+/* line 33, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.social {
+  list-style: none;
+  padding: 10px 0;
+  text-align: right; }
+
+/* line 40, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; }
+  /* line 45, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+  .social__item:last-child {
+    margin-right: 0; }
+
+/* line 50, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/img/icon/socials.png");
+  background-repeat: no-repeat; }
+  /* line 57, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+  .social__link:last-child {
+    margin-right: 0; }
+
+/* line 63, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.social__link_fb {
+  width: 31px;
+  height: 30px;
+  background-position: -5px -5px; }
+  /* line 68, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+  .social__link_fb:hover {
+    background-image: url("/img/icon/hover/socials.png"); }
+
+/* line 73, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.social__link_tw {
+  width: 31px;
+  height: 30px;
+  background-position: -5px -45px; }
+  /* line 78, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+  .social__link_tw:hover {
+    background-image: url("/img/icon/hover/socials.png"); }
+
+/* line 83, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+.social__link_vk {
+  width: 32px;
+  height: 30px;
+  background-position: -5px -85px; }
+  /* line 88, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/footer.scss */
+  .social__link_vk:hover {
+    background-image: url("/img/icon/hover/socials.png"); }
+
+/*# sourceMappingURL=footer.css.map */

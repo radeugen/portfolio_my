@@ -1,0 +1,105 @@
+@import "adjustment.scss"; 
+
+.content {
+    .container{
+        @extend %clearfix;
+        padding: 30px 0;
+    }
+}
+
+.content__left {
+    float: left;
+    width: 240px;
+}
+
+.main-menu {
+    @extend %nulled;
+    list-style: none;
+}
+
+.main-menu__item {
+    display: block;
+    height: 45px;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.main-menu-link {
+    text-decoration: none;
+    color: $text-dark;
+    display: block;
+    padding: 10px 0;
+    
+    &:hover {
+        color: $blue-color;
+    }
+}
+
+.main-menu__item_active {
+    @extend %font-active;
+    color: $blue-color;
+    border-right: 6px solid $blue-color;
+    
+    .main-menu-link {
+        color: $blue-color;
+    }
+}
+
+.content__right {
+    float: right;
+    width: 700px;
+    @extend %clearfix;
+}
+
+
+.main-content__left {
+    float: left;
+    width: 340px-(35px*2);
+    padding: 0 35px;
+    text-align: center;
+}
+
+.content-pic {
+    @include avatar-round(#bebebe);
+}
+
+.main-content__right {
+    float: right;
+    width: 700px - 340px;
+    padding: 0;
+    
+}
+
+.content-title {
+    padding: 0;
+    margin: 0;
+    @extend %font-h1;
+    margin-bottom: 30px;
+}
+
+.content-text {
+    max-height: 290px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.content-download {
+    text-align: right;
+}
+
+.content-download__link {
+    display: inline-block;
+    color: $red-color;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    border: 2px solid $red-color;
+    @include border-radius(50px);
+    
+    &:hover {
+        color: $white-color;
+        background-color: $red-color;
+    }
+}

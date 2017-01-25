@@ -1,0 +1,105 @@
+/*VARS*/
+.content-title {
+  font-size: 35px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1;
+  font-weight: bold; }
+
+.main-menu__item_active {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: bold; }
+
+.content .container::after, .content__right::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.main-menu {
+  padding: 0;
+  margin: 0; }
+
+.content .container {
+  padding: 30px 0; }
+
+.content__left {
+  float: left;
+  width: 240px; }
+
+.main-menu {
+  list-style: none; }
+
+.main-menu__item {
+  display: block;
+  height: 45px;
+  padding-right: 25px;
+  text-align: right; }
+
+.main-menu-link {
+  text-decoration: none;
+  color: #414141;
+  display: block;
+  padding: 10px 0; }
+  .main-menu-link:hover {
+    color: #33c1e3; }
+
+.main-menu__item_active {
+  color: #33c1e3;
+  border-right: 6px solid #33c1e3; }
+  .main-menu__item_active .main-menu-link {
+    color: #33c1e3; }
+
+.content__right {
+  float: right;
+  width: 700px; }
+
+.main-content__left {
+  float: left;
+  width: 270px;
+  padding: 0 35px;
+  text-align: center; }
+
+.content-pic {
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.main-content__right {
+  float: right;
+  width: 360px;
+  padding: 0; }
+
+.content-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px; }
+
+.content-text {
+  max-height: 290px;
+  margin-bottom: 50px;
+  overflow: auto; }
+
+.content-download {
+  text-align: right; }
+
+.content-download__link {
+  display: inline-block;
+  color: #e85f61;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  border: 2px solid #e85f61;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  .content-download__link:hover {
+    color: #ffffff;
+    background-color: #e85f61; }
+
+/*# sourceMappingURL=content.css.map */

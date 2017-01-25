@@ -1,60 +1,83 @@
-@charset "UTF-8";
 /*VARS*/
-/* line 13, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
-html, body {
-  height: 100%;
-  min-height: 100%; }
-
-/* line 18, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
-.wrapper {
-  position: relative;
-  min-height: 100%;
-  overflow: hidden;
-  min-width: 960px; }
-  /* line 24, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
-  .wrapper::after {
-    content: "";
-    display: block;
-    min-height: 50px; }
-
-/* line 32, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
-.container {
-  width: 940px;
-  margin: 0 auto; }
-
-/* line 37, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
-.footer {
-  min-height: 50px;
-  margin-top: -50px; }
-
-/* line 42, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
 body {
   font-size: 18px;
   font-family: "Myriad Pro", Arial, sans-serif;
   line-height: 1.44;
   font-weight: normal; }
 
-/* line 56, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
-.contacts-link {
+.content-title {
+  font-size: 35px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1;
+  font-weight: bold; }
+
+.contacts-link, .main-menu__item_active {
   font-size: 18px;
   font-family: "Myriad Pro", Arial, sans-serif;
   line-height: 1.44;
   font-weight: bold; }
 
-/* line 64, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/_misc/adjustment.scss */
-.header::after {
+.header::after, .content .container::after, .content__right::after, .footer .container::after {
   content: '';
   display: block;
   clear: both; }
 
-/* line 3, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
+.main-menu, .social {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #f6f6f6;
   color: #727272; }
 
-/* line 11, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 960px; }
+  .wrapper::after {
+    content: "";
+    display: block;
+    min-height: 50px; }
+
+.container {
+  width: 940px;
+  margin: 0 auto; }
+
+/*VARS*/
+body {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: normal; }
+
+.content-title {
+  font-size: 35px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1;
+  font-weight: bold; }
+
+.contacts-link, .main-menu__item_active {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: bold; }
+
+.header::after, .content .container::after, .content__right::after, .footer .container::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.main-menu, .social {
+  padding: 0;
+  margin: 0; }
+
 .header {
   width: 100%;
   min-height: 60px;
@@ -64,15 +87,12 @@ body {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
 
-/* line 21, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
 .header__left {
   float: left; }
 
-/* line 25, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
 .header__right {
   float: right; }
 
-/* line 29, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
 .avatar-img {
   display: inline-block;
   vertical-align: middle;
@@ -83,23 +103,21 @@ body {
   /* stops bg color from leaking outside the border: */
   margin-right: 15px; }
 
-/* line 36, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
 .contacts {
   margin-top: 20px;
   position: relative; }
 
-/* line 41, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
 .contacts-link {
+  display: inline-block;
   color: #33c1e3;
   text-decoration: none;
-  background: url("/img/bg/contacts_bg.png") no-repeat 0 bottom; }
+  background: url("/img/bg/contacts_bg.png") repeat-x 0 bottom; }
 
-/* line 48, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
 .contacts-dropdown {
+  display: none;
   position: absolute;
   top: 35px;
   left: -30px;
-  display: block;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -110,18 +128,211 @@ body {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
-/* line 61, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
 .contacts-dropdown__item {
   list-style: none;
   padding: 10px 20px;
   border-bottom: 1px solid rgba(90, 90, 90, 0.1); }
-  /* line 66, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
   .contacts-dropdown__item:last-child {
     border-bottom: none; }
 
-/* line 71, C:/TEMP/Web-разработка для начинающих/Practice/portfolio_my/css/style.scss */
+/*VARS*/
+body {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: normal; }
+
+.content-title {
+  font-size: 35px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1;
+  font-weight: bold; }
+
+.contacts-link, .main-menu__item_active {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: bold; }
+
+.header::after, .content .container::after, .content__right::after, .footer .container::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.main-menu, .social {
+  padding: 0;
+  margin: 0; }
+
+.content .container {
+  padding: 30px 0; }
+
+.content__left {
+  float: left;
+  width: 240px; }
+
+.main-menu {
+  list-style: none; }
+
+.main-menu__item {
+  display: block;
+  height: 45px;
+  padding-right: 25px;
+  text-align: right; }
+
+.main-menu-link {
+  text-decoration: none;
+  color: #414141;
+  display: block;
+  padding: 10px 0; }
+  .main-menu-link:hover {
+    color: #33c1e3; }
+
+.main-menu__item_active {
+  color: #33c1e3;
+  border-right: 6px solid #33c1e3; }
+  .main-menu__item_active .main-menu-link {
+    color: #33c1e3; }
+
+.content__right {
+  float: right;
+  width: 700px; }
+
+.main-content__left {
+  float: left;
+  width: 270px;
+  padding: 0 35px;
+  text-align: center; }
+
+.content-pic {
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.main-content__right {
+  float: right;
+  width: 360px;
+  padding: 0; }
+
+.content-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px; }
+
+.content-text {
+  max-height: 290px;
+  margin-bottom: 50px;
+  overflow: auto; }
+
+.content-download {
+  text-align: right; }
+
+.content-download__link {
+  display: inline-block;
+  color: #e85f61;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  border: 2px solid #e85f61;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  .content-download__link:hover {
+    color: #ffffff;
+    background-color: #e85f61; }
+
+/*VARS*/
+body {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: normal; }
+
+.content-title {
+  font-size: 35px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1;
+  font-weight: bold; }
+
+.contacts-link, .main-menu__item_active {
+  font-size: 18px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  line-height: 1.44;
+  font-weight: bold; }
+
+.header::after, .content .container::after, .content__right::after, .footer .container::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.main-menu, .social {
+  padding: 0;
+  margin: 0; }
+
 .footer {
+  position: relative;
+  z-index: 10;
   width: 100%;
-  background-color: #414141; }
+  background-color: #414141;
+  min-height: 50px;
+  margin-top: -50px; }
+
+.footer__left {
+  float: left;
+  width: 500px; }
+
+.copyright {
+  padding: 15px 0;
+  font-size: 14px; }
+
+.footer__right {
+  float: right;
+  width: 150px; }
+
+.social {
+  list-style: none;
+  padding: 10px 0;
+  text-align: right; }
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; }
+  .social__item:last-child {
+    margin-right: 0; }
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/img/icon/socials.png");
+  background-repeat: no-repeat; }
+  .social__link:last-child {
+    margin-right: 0; }
+
+.social__link_fb {
+  width: 31px;
+  height: 30px;
+  background-position: -5px -5px; }
+  .social__link_fb:hover {
+    background-image: url("/img/icon/hover/socials.png"); }
+
+.social__link_tw {
+  width: 31px;
+  height: 30px;
+  background-position: -5px -45px; }
+  .social__link_tw:hover {
+    background-image: url("/img/icon/hover/socials.png"); }
+
+.social__link_vk {
+  width: 32px;
+  height: 30px;
+  background-position: -5px -85px; }
+  .social__link_vk:hover {
+    background-image: url("/img/icon/hover/socials.png"); }
 
 /*# sourceMappingURL=style.css.map */

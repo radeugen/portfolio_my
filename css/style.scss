@@ -1,4 +1,9 @@
-@import "_misc/adjustment.scss"; 
+@import "_misc/adjustment.scss";
+
+html,body {
+    height: 100%;
+    min-height: 100%;
+}
 
 body {
     margin: 0;
@@ -8,68 +13,30 @@ body {
     color: $text-light;
 }
 
-.header {
-    @extend %clearfix;
-    width: 100%;
-    min-height: 60px;
-    padding: 10px 0;
-    background-color: $white-color;
-    @include box-shadow(0, 1px, 3px,rgba(0, 0, 0, 0.2));
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: $container-width +20px;
     
-}
-
-.header__left {
-    float: left;
-}
-
-.header__right {
-    float: right;
-}
-
-.avatar-img {
-    @include inlineblock();
-    @include avatar-round(#bebebe);
-    margin-right: 15px;
-    
-}
-
-.contacts {
-    margin-top: 20px;
-    position: relative;
-}
-
-.contacts-link {
-    @extend %font-active;
-    color: $blue-color;
-    text-decoration: none;
-    background: url('/img/bg/contacts_bg.png') no-repeat 0 bottom;
-}
-
-.contacts-dropdown {
-    position: absolute;
-    top: 35px;
-    left: -30px;
-    display: block;
-    margin: 0;
-    padding: 0;
-    background-color: $white-color;
-    border: 1px solid #dedede;
-    white-space: nowrap;
-    @include border-radius(10px);
-}
-
-.contacts-dropdown__item {
-    list-style: none;
-    padding: 10px 20px;
-    border-bottom: 1px solid rgba(#5a5a5a, 0.1);
-    
-    &:last-child{
-        border-bottom: none;
+    &::after {
+        content: "";
+        display: block;
+        min-height: $footer-height;
     }
+    
 }
 
-.footer {
-    width: 100%;
-    background-color: $text-dark;
+.container {
+    width: $container-width;
+    margin: 0 auto;
 }
+
+@import "_misc/header.scss"; 
+@import "_misc/content.scss";
+
+
+@import "_misc/footer.scss"; 
+
 
