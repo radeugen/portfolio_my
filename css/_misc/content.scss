@@ -18,31 +18,30 @@
 }
 
 .main-menu__item {
-    display: block;
-    height: 45px;
-    padding-right: 25px;
-    text-align: right;
+    
 }
 
 .main-menu-link {
+    display: block;
+    height: 45px;
+    text-align: right;
     text-decoration: none;
     color: $text-dark;
-    display: block;
-    padding: 10px 0;
+    padding: 10px 25px 10px 0;
+    border-right: 6px solid transparent;
     
     &:hover {
         color: $blue-color;
+        text-decoration: none;
+        border-right: 6px solid $blue-color;
     }
 }
 
-.main-menu__item_active {
+.main-menu-link_active {
     @extend %font-active;
     color: $blue-color;
     border-right: 6px solid $blue-color;
     
-    .main-menu-link {
-        color: $blue-color;
-    }
 }
 
 .content__right {
@@ -101,5 +100,6 @@
     &:hover {
         color: $white-color;
         background-color: $red-color;
+        text-decoration: none;
     }
 }

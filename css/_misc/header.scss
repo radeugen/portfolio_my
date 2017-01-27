@@ -36,6 +36,11 @@
     color: $blue-color;
     text-decoration: none;
     background: url('/img/bg/contacts_bg.png') repeat-x 0 bottom;
+    
+    &:hover {
+        text-decoration: none;
+        color: $blue-color;
+    }
 }
 
 .contacts-dropdown {

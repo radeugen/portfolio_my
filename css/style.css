@@ -11,7 +11,7 @@ body {
   line-height: 1;
   font-weight: bold; }
 
-.contacts-link, .main-menu__item_active {
+.contacts-link, .main-menu-link_active {
   font-size: 18px;
   font-family: "Myriad Pro", Arial, sans-serif;
   line-height: 1.44;
@@ -63,7 +63,7 @@ body {
   line-height: 1;
   font-weight: bold; }
 
-.contacts-link, .main-menu__item_active {
+.contacts-link, .main-menu-link_active {
   font-size: 18px;
   font-family: "Myriad Pro", Arial, sans-serif;
   line-height: 1.44;
@@ -112,6 +112,9 @@ body {
   color: #33c1e3;
   text-decoration: none;
   background: url("/img/bg/contacts_bg.png") repeat-x 0 bottom; }
+  .contacts-link:hover {
+    text-decoration: none;
+    color: #33c1e3; }
 
 .contacts-dropdown {
   display: none;
@@ -148,7 +151,7 @@ body {
   line-height: 1;
   font-weight: bold; }
 
-.contacts-link, .main-menu__item_active {
+.contacts-link, .main-menu-link_active {
   font-size: 18px;
   font-family: "Myriad Pro", Arial, sans-serif;
   line-height: 1.44;
@@ -173,25 +176,22 @@ body {
 .main-menu {
   list-style: none; }
 
-.main-menu__item {
+.main-menu-link {
   display: block;
   height: 45px;
-  padding-right: 25px;
-  text-align: right; }
-
-.main-menu-link {
+  text-align: right;
   text-decoration: none;
   color: #414141;
-  display: block;
-  padding: 10px 0; }
+  padding: 10px 25px 10px 0;
+  border-right: 6px solid transparent; }
   .main-menu-link:hover {
-    color: #33c1e3; }
+    color: #33c1e3;
+    text-decoration: none;
+    border-right: 6px solid #33c1e3; }
 
-.main-menu__item_active {
+.main-menu-link_active {
   color: #33c1e3;
   border-right: 6px solid #33c1e3; }
-  .main-menu__item_active .main-menu-link {
-    color: #33c1e3; }
 
 .content__right {
   float: right;
@@ -243,7 +243,8 @@ body {
   /* stops bg color from leaking outside the border: */ }
   .content-download__link:hover {
     color: #ffffff;
-    background-color: #e85f61; }
+    background-color: #e85f61;
+    text-decoration: none; }
 
 /*VARS*/
 body {
@@ -258,7 +259,7 @@ body {
   line-height: 1;
   font-weight: bold; }
 
-.contacts-link, .main-menu__item_active {
+.contacts-link, .main-menu-link_active {
   font-size: 18px;
   font-family: "Myriad Pro", Arial, sans-serif;
   line-height: 1.44;
