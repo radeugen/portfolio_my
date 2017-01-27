@@ -13,6 +13,21 @@ body {
     color: $text-light;
 }
 
+a {
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: none;
+    }
+    
+    &:active {
+        text-decoration: none;
+    }
+    
+    &:visited {
+        text-decoration: none;
+    }
+}
 
 .wrapper {
   position: relative;
